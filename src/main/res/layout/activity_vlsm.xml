@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VlsmActivity">
+
+    <TextView
+        android:id="@+id/textView_ip_address_hotes_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP ADDRESS"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/Mycolor_1"
+        app:layout_constraintBottom_toTopOf="@id/ip_address_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <LinearLayout
+        android:id="@+id/ip_address_block"
+        android:layout_width="402dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ip_address_hotes_activity"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/txt_oct1"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="192"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <EditText
+            android:id="@+id/txt_oct2"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="168"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="340dp" />
+        <EditText
+            android:id="@+id/txt_oct3"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="1"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <EditText
+            android:id="@+id/txt_oct4"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="1"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_mask_address_hotes_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="MASK ADDRESS"
+        android:textColor="@color/Mycolor_4"
+        app:layout_constraintBottom_toTopOf="@id/mask_address_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip_address_block"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <LinearLayout
+        android:id="@+id/mask_address_block"
+        android:layout_width="402dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="2dp"
+        app:layout_constraintTop_toBottomOf="@id/textView_mask_address_hotes_activity"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/txt_mask1"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="255"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <EditText
+            android:id="@+id/txt_mask2"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="255"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="340dp" />
+        <EditText
+            android:id="@+id/txt_mask3"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="255"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <EditText
+            android:id="@+id/txt_mask4"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:text=""
+            android:hint="0"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSubnetList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mask_address_block"
+        android:text="Subnets List"
+        android:textColor="@color/Mycolor_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/settingSubnetsList_block"
+        android:layout_width="402dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txtSubnetList"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/txt_nameSubnet"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:maxLength="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="subnet name"
+            />
+
+        <EditText
+            android:id="@+id/txt_sizeOfSubnet"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="size"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/addSubnet_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:onClick="addToSubnetsList"
+            android:text="Add" />
+    </LinearLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/settingSubnetsList_block"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="394dp"
+        android:scrollbarStyle="insideInset"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/lstSunetAndSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            >
+
+        </TextView>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/showResul_vlsm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/Mycolor_1"
+        android:text="show result"
+        android:onClick="showResultForVlsmSegmentation"
+        android:textColor="@color/Mycolor_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ScrollView01"
+        app:layout_constraintVertical_bias="0.128" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
